@@ -1,0 +1,29 @@
+To get everything setup, perform the following steps:
+
+1) install bluetooth stack
+apt-get install bluetooth bluez-utils bluez-tools blueman python-bluetooth
+
+2) install vnc server
+apt-get install tightvncserver
+on Linux box, install tightvncviewer
+
+3) run vnc server
+you need to run vnc as root, so run:
+tightvncserver
+
+and then
+
+sudo vncserver :1 -geometry 1024x728 -depth 24
+
+4) connect from Linux box
+vncviewer
+
+run bluetooth manager
+
+http://www.rpiblog.com/2012/08/bluetooth-pairing-of-raspberry-pi-with.html
+
+and pair the phones
+
+5) start coding :-)
+https://code.google.com/p/pybluez/wiki/Documentation
+
