@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 $ha_testcmd $1
 
