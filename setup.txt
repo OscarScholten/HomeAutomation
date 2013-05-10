@@ -9,10 +9,14 @@ boot up and in the configuration tool perform the following:
 - enable ssh
 - set boot to desktop
 
-press finish, reboot and expand the filesystem using sudo resize2fs /dev/root 28G
+press finish, reboot and expand the filesystem using
+sudo resize2fs /dev/root 28G
 
 1) install bluetooth stack
 apt-get install bluetooth bluez-utils bluez-tools blueman python-bluetooth
+
+All packages are listed in apt-get.sh for convenience. To get this, install
+git, and run git clone git://github.com/OscarScholten/HomeAutomation.git
 
 2) install vnc server
 apt-get install tightvncserver
