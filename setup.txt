@@ -1,5 +1,16 @@
 To get everything setup, perform the following steps:
 
+0) install raspbarry image
+download wheezy image & write to SD card
+
+boot up and in the configuration tool perform the following:
+- change the timezone
+- expand the partition
+- enable ssh
+- set boot to desktop
+
+press finish, reboot and expand the filesystem using sudo resize2fs /dev/root 28G
+
 1) install bluetooth stack
 apt-get install bluetooth bluez-utils bluez-tools blueman python-bluetooth
 
