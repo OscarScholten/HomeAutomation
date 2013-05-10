@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get \
+sudo apt-get install \
 	bluez-tools \
 	blueman \
 	python-bluetooth \
