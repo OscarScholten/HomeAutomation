@@ -24,14 +24,11 @@ on Linux box, install tightvncviewer
 
 3) run vnc server
 you need to run vnc as root, so run:
-tightvncserver
-
-and then
 
 sudo vncserver :1 -geometry 1024x728 -depth 24
 
 4) connect from Linux box
-vncviewer
+vncviewer <ip>:1
 
 run bluetooth manager
 
@@ -42,3 +39,8 @@ and pair the phones
 5) start coding :-)
 https://code.google.com/p/pybluez/wiki/Documentation
 
+6) install the services
+sudo mkdir -p /var/opt/homeautomation/btdevicedata
+
+add to /etc/crontab
+*/1 *   * * *   root    /home/pi/projects/HomeAutomation/bin/testhosts.sh /home/pi/projects/HomeAutomation/conf/pisettings.conf
